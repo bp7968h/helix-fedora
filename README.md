@@ -16,10 +16,10 @@ If you use just `hx`, then you can use the `:open filename` to open that file. T
 
 2. **Edit Helix Look and Feel**
 
-If you want to change the look and feel of the helix editor, you now need to add configuration file. When you opened helix for the first time, it initializes `.config` directory on your home directory `~/.`
+If you want to change the look and feel of the helix editor, you now need to add configuration file. When you opened helix for the first time, it initializes `.config/helix` directory on your home directory `~/.`
   - Create helix config file.
 ```bash
-cd ~/.config
+cd ~/.config/helix
 hx config.toml
 ```
   - Add required look and feel.
@@ -52,10 +52,10 @@ rustup component add rust-analyzer clippy rustfmt
 
 2. **Setup Helix for Rust**
 
-Now, that you have rust and helix, it's time to configure helix with rust language server, linting and format capabilities. For this, we need `languages.toml` in the `.config` directory.
+Now, that you have rust and helix, it's time to configure helix with rust language server, linting and format capabilities. For this, we need `languages.toml` in the `.config/helix` directory.
   - Create language config file
 ```bash
-cd ~/.config
+cd ~/.config/helix
 hx languages.toml
 ```
   - Add required configuration to the files
@@ -71,6 +71,15 @@ sudo dnf install lldb
 Now when you look into the health of rust using `hx --health rust`, everything should be in place as shown below:
 ```bash
 hx --health rust
+Configured language servers:
+  ✓ rust-analyzer: ~/.cargo/bin/rust-analyzer
+Configured debug adapter: lldb-dap
+Binary for debug adapter: /usr/bin/lldb-dap
+Configured formatter: rustfmt
+Binary for formatter: ~/.cargo/bin/rustfmt
+Highlight queries: ✓
+Textobject queries: ✓
+Indent queries: ✓
 ```
 
 You are all set to work on your next big project using helix and rust. 
