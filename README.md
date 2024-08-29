@@ -12,4 +12,4 @@ This installs the helix text editor on your system, you can launch helix using t
 hx
 hx filename/directory
 ```
-If you use just hx, then you can use the ``:open filename` to open that file. This should be visible on the bottom left. 
+If you use just hx, then you can use the `:open filename` to open that file. This should be visible on the bottom left. 
