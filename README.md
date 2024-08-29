@@ -1,16 +1,16 @@
 # Helix Configuration for Rust on Fedora 40
-So, I have a old laptop so need a lightweight IDE for development and helix along with it's lsp is a powerful and lighweight(well rust-analyzer is not but still consumes less ram). It took a bit of time to setup helix for rust on fedora (linux) and understand the what and how. This repository collects my findings on installing and setting up helix text editor for rust language and fedora workstation 40. 
+I have an old laptop and need a lightweight IDE for development. Helix, along with its LSP, is powerful and lightweight (well, rust-analyzer is not, but it still consumes less RAM). It took a bit of time to set up Helix for Rust on Fedora (Linux) and understand the what and how. This repository collects my findings on installing and setting up the Helix text editor for Rust language on Fedora Workstation 40 (can work for most linux distro).
 
 ## Helix Installation
-I am using fedora workstation 40, however helix is available for all of the OS and distros. Fortunately, it's available to be installed using package manager as well. Refer to the [installtion guide according to os/distro](https://docs.helix-editor.com/package-managers.html)
+I am using Fedora workstation 40, however Helix is available for all of the OS and distros. Fortunately, it's available to be installed using package manager as well. Refer to the [installtion guide according to os/distro](https://docs.helix-editor.com/package-managers.html)
 1. **Install Helix using Package Manager**
 ```bash
 sudo dnf install helix -y
 ```  
-This installs the helix text editor on your system, you can launch helix using the following command from terminal, or this is available to be launched using app.
+This installs the Helix editor on your system, you can launch Helix using the following command from terminal, or this is available to be launched using app.
 ```bash
 hx
-hx filename/directory
+hx <filename/directory>
 ```
 If you use just `hx`, then you can use the `:open filename` to open that file. This should be visible on the bottom left. The bottom view with all information such as filename, mode, file-type is called *status line*.
 
@@ -23,6 +23,8 @@ cd ~/.config
 hx config.toml
 ```
   - Add required look and feel.
+
+>Note: You can check theme name from within Helix in runtime use `:theme <themename>`, in normal mode. Helix gives you auto suggestion for those.
 
 Simply, this config file is used to configure the helix editor, like themes, line numbers, what should appear where etc. For this you can refer to the [`config.toml`](https://github.com/bp7968h/helix-rust-fedora/main/config.toml) given in this repository which can be used as a building block, and you can find more [about each field in this documentation](https://docs.helix-editor.com/configuration.html) 
 
