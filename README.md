@@ -26,7 +26,7 @@ hx config.toml
 
 >Note: You can check theme name from within Helix in runtime use `:theme <themename>`, in normal mode. Helix gives you auto suggestion for those.
 
-Simply, this config file is used to configure the helix editor, like themes, line numbers, what should appear where etc. For this you can refer to the [`config.toml`](https://github.com/bp7968h/helix-rust-fedora/main/config.toml) given in this repository which can be used as a building block, and you can find more [about each field in this documentation](https://docs.helix-editor.com/configuration.html) 
+Simply, this config file is used to configure the helix editor, like themes, line numbers, what should appear where etc. For this you can refer to the [`config.toml`](https://github.com/bp7968h/helix-rust-fedora/blob/main/config.toml) given in this repository which can be used as a building block, and you can find more [about each field in this documentation](https://docs.helix-editor.com/configuration.html) 
 
 >Now, as Helix editor is working in desired state, now we can configure helix to make our life easier while working with Rust. To check the health and configuration of Rust language support  we can use the following command: In fact, you can use any other language here `hx --health` for all the languages.
 ```bash
@@ -60,7 +60,7 @@ hx languages.toml
 ```
   - Add required configuration to the files
 
-This configuration contains settings for language servers and language-specific settings. For this you can refer to the [`languages.toml`](https://github.com/bp7968h/helix-rust-fedora/main/languages.toml) given in this repository which can be used as a building block, and you can find more [about each field in this documentation](https://docs.helix-editor.com/languages.html). Also some of the settings come from rust-analyzer, [check it out here](https://rust-analyzer.github.io/manual.html).
+This configuration contains settings for language servers and language-specific settings. For this you can refer to the [`languages.toml`](https://github.com/bp7968h/helix-rust-fedora/blob/main/languages.toml) given in this repository which can be used as a building block, and you can find more [about each field in this documentation](https://docs.helix-editor.com/languages.html). Also some of the settings come from rust-analyzer, [check it out here](https://rust-analyzer.github.io/manual.html).
   - Add debugging capabalities
 
 Now you also need debugging capabilities, for this you need to add `lldb-dap` which is the default debug adapter protocol for rust in helix. Use the below command which installs lldb with this comes lldb-dap.
