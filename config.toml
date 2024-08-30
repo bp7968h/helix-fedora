@@ -15,7 +15,7 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 separator = "<->"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
-mode.select = "SELECT"
+mode.select = "VISUAL"
 
 [editor.cursor-shape]
 normal = "hidden"
@@ -24,3 +24,9 @@ select = "block"
 
 [editor.file-picker]
 hidden = false
+
+[keys.normal.c]
+r = ":sh cargo run 2>&1 || true"
+c = ":sh cargo check 2>&1 || true"
+b = ":sh cargo build 2>&1 || true"
+t = ":sh cargo test 2>&1 || true"
